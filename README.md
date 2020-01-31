@@ -1,7 +1,7 @@
 # ruby-on-rails-crud-mongodb-with-scaffold
 <br>
 <br>
-## Installations <br>
+## Installations
 1.rails new ruby-on-rails-crud-mongodb-with-scaffold --skip-active-record <br>
 2.cd ruby-on-rails-crud-mongodb-with-scaffold <br>
 3.add gem 'mongoid', '~> 7.0.5' and gem 'bson_ext' in Gemfile <br>
