@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Penulis:</strong>
+  <%= @buku.penulis %>
+</p>
+
+<p>
+  <strong>Judul:</strong>
+  <%= @buku.judul %>
+</p>
+
+<p>
+  <strong>Kota:</strong>
+  <%= @buku.kota %>
+</p>
+
+<p>
+  <strong>Penerbit:</strong>
+  <%= @buku.penerbit %>
+</p>
+
+<p>
+  <strong>Tahun:</strong>
+  <%= @buku.tahun %>
+</p>
+
+<%= link_to 'Edit', edit_buku_path(@buku) %> |
+<%= link_to 'Back', bukus_path %>

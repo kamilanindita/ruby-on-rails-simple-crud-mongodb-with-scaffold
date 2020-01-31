@@ -1,0 +1,42 @@
+<%= form_with(model: buku, local: true) do |form| %>
+  <% if buku.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(buku.errors.count, "error") %> prohibited this buku from being saved:</h2>
+
+      <ul>
+        <% buku.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :penulis %>
+    <%= form.text_field :penulis %>
+  </div>
+
+  <div class="field">
+    <%= form.label :judul %>
+    <%= form.text_field :judul %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kota %>
+    <%= form.text_field :kota %>
+  </div>
+
+  <div class="field">
+    <%= form.label :penerbit %>
+    <%= form.text_field :penerbit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tahun %>
+    <%= form.number_field :tahun %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
